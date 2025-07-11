@@ -17,7 +17,7 @@
                         </div>
                     @endif
 
-                    <form method="POST" action="{{ route('register.valid') }}">
+                    <form method="POST" action="{{ route('register.validasi') }}">
                         @csrf
                         <div class="mb-3">
                             <label>Nama</label>
@@ -40,7 +40,7 @@
                     <div class="mt-3 text-center">
                         <p class="mb-4 text-sm mx-auto">
                         Sudah punya akun?
-                        <a href="{{ route('login.show') }}" class="text-primary text-gradient font-weight-bold">Login</a> {{-- Gunakan route() untuk link login --}}
+                        <a href="{{ route('login.tampil') }}" class="text-primary text-gradient font-weight-bold">Login</a> {{-- Gunakan route() untuk link login --}}
                     </p>
                     </div>
                 </div>

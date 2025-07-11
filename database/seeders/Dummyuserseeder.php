@@ -15,13 +15,13 @@ class Dummyuserseeder extends Seeder
     {
         $userData =[
             [
-                'name'=>'costomer',
+                'name'=>'costomer 1',
                 'email'=>'user@gmail.com',
                 'role'=>'user',
                 'password'=>bcrypt('user'),
             ],
             [
-                'name'=>'admin',
+                'name'=>'admin 1',
                 'email'=>'admin@gmail.com',
                 'role'=>'admin',
                 'password'=>bcrypt('admin'),

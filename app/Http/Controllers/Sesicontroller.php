@@ -18,8 +18,8 @@ class Sesicontroller extends Controller
             'email' => 'required',
             'password' => 'required'
         ],[
-            'email.required'=>'email wajib diisi',
-            'password.required'=>'password wajib diisi',
+            'email.required'=>'email wajib diisi!',
+            'password.required'=>'password wajib diisi!',
         ],
     ); 
 
