@@ -1,8 +1,9 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('assets/img/apple-icon.png') }}">
-<link rel="icon" type="image/png" href="{{ asset('assets/img/favicon.png') }}">
-<title>Material Dashboard</title>
+<link rel="icon" type="image/png" href="{{ asset('assets/img/javazon.png') }}">
+<title>Javazone</title>
+
 
 {{-- Fonts and Icons --}}
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,900" />
@@ -12,6 +13,7 @@
 <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
 <link id="pagestyle" href="{{ asset('assets/css/material-dashboard.css?v=3.2.0') }}" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
 {{-- Custom Style --}}
 <style>
