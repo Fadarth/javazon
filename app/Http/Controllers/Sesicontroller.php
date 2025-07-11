@@ -29,7 +29,7 @@ class Sesicontroller extends Controller
     ];
 
     if (Auth::attempt($infologin)){
-        
+        return redirect('/');
     }else{
         return redirect('/loginform')->withErrors('username dan password tidak sesuai')->withInput();
     }
