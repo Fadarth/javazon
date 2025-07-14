@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class AddBarangController extends Controller
 {
@@ -39,6 +40,7 @@ class AddBarangController extends Controller
         }
         $row = new Product();
         $row->name = $request->name;
+        $row->slug = Str::slug($request->name) . '-' . uniqid();
         $row->description = $request->description;
         $row->price = $request->price;
         $row->stock = $request->stock;

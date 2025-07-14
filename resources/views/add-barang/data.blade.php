@@ -5,7 +5,7 @@
         <div class="py-4">
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <h4 class="mb-0">Daftar Barang</h4>
-                <a href="{{ url('add-barang/add') }}" class="btn btn-success btn-sm">
+                <a href="{{ url('add-barang/add') }}" class="btn btn-primary btn-sm">
                     <i class="fas fa-plus me-1"></i> Tambah Barang
                 </a>
             </div>

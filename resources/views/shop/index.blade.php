@@ -57,7 +57,7 @@
                             <div class="p-2">
                                 <h6 class="mb-1">{{ $product->name }}</h6>
                                 <p class="text-muted mb-1">Rp {{ number_format($product->price, 0, ',', '.') }}</p>
-                                <a href="#" class="btn btn-sm btn-success w-100">
+                                <a href="{{ route('product.show', $product->slug) }}" class="btn btn-sm btn-primary w-100">
                                     <i class="fas fa-shopping-cart me-1"></i> Beli
                                 </a>
                             </div>
@@ -79,7 +79,8 @@
                                     <div class="card-body">
                                         <h6 class="card-title">{{ $item->name }}</h6>
                                         <p class="text-muted mb-1">Rp {{ number_format($item->price, 0, ',', '.') }}</p>
-                                        <a href="#" class="btn btn-sm btn-success w-100">
+                                        <a href="{{ route('product.show', $product->slug) }}"
+                                            class="btn btn-sm btn-primary w-100">
                                             <i class="fas fa-shopping-cart me-1"></i> Beli
                                         </a>
                                     </div>

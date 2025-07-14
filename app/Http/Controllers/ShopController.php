@@ -14,7 +14,6 @@ class ShopController extends Controller
         $allProducts = Product::latest()->take(12)->get();
         $query = Product::with('category');
 
-        // Jika ada filter kategori
         if ($request->has('category') && $request->category != '') {
             $query->where('category_id', $request->category);
         }
@@ -22,5 +21,11 @@ class ShopController extends Controller
         $products = $query->get();
 
         return view('shop.index', compact('products', 'categories', 'allProducts'));
+    }
+    public function show($slug)
+    {
+        $product = Product::where('slug', $slug)->firstOrFail();
+
+        return view('shop.show', compact('product'));
     }
 }
