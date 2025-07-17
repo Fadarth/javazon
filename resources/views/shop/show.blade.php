@@ -34,16 +34,16 @@
                     <strong>Kategori:</strong> {{ $product->category->name ?? '-' }}
                 </div>
 
-                <div class="d-flex align-items-center mb-3">
+                {{-- <div class="d-flex align-items-center mb-3">
                     <strong class="me-3">Kuantitas:</strong>
                     <input type="number" min="1" value="1" class="form-control w-auto text-center">
-                </div>
+                </div> --}}
 
                 <div class="d-flex gap-2">
                     <form action="{{ route('cart.add', $product->id) }}" method="POST" class="d-flex gap-2">
                         @csrf
-                        {{-- <input type="number" name="quantity" min="1" value="1"
-                            class="form-control w-auto text-center"> --}}
+                        <input type="number" name="quantity" min="1" value="1"
+                            class="form-control w-auto text-center">
                         <button type="submit" class="btn btn-outline-info btn-lg flex-fill">
                             <i class="fas fa-cart-plus me-2"></i> Masukkan Keranjang
                         </button>

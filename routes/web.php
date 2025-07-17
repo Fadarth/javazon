@@ -12,7 +12,7 @@ Route::get('/', function () {
 
 Route::get('shop', [ShopController::class, 'index'])->name('shop.index');
 Route::get('/produk/{slug}', [ShopController::class, 'show'])->name('product.show');
-Route::get('shop/cart', [CartController::class, 'index'])->name('cart');
+Route::get('shop/cart', [CartController::class, 'index'])->name('cart.index');
 Route::post('shop/cart/add/{product}', [CartController::class, 'add'])->name('cart.add');
 Route::patch('shop/cart/update/{id}', [CartController::class, 'update'])->name('cart.update');
 Route::delete('shop/cart/remove/{id}', [CartController::class, 'remove'])->name('cart.remove');
@@ -35,5 +35,5 @@ Route::get('/register', [SesiController::class, 'createRegister'])->name('regist
 Route::post('/register', [SesiController::class, 'register'])->name('register.validasi');
 
 Route::get('/register', function () {
-    return view('auth.register');
+    return view('loginform.register');
 })->name('register');
