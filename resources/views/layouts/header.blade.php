@@ -4,7 +4,6 @@
 <link rel="icon" type="image/png" href="{{ asset('assets/img/javazon.png') }}">
 <title>Javazone</title>
 
-
 {{-- Fonts and Icons --}}
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,900" />
 <link href="{{ asset('assets/css/nucleo-icons.css') }}" rel="stylesheet" />

@@ -2,14 +2,11 @@
 <style>
     .custom-blue {
         background-color: #00BFFF !important;
-        /* biru Bootstrap */
         color: #fff !important;
-        /* teks putih */
     }
 
     .custom-blue th {
         border-color: #00BFFF !important;
-        /* opsional, border biru lebih gelap */
     }
 </style>
 
