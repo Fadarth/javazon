@@ -73,13 +73,15 @@
                         <h5 class="mb-3">{{ $category->name }}</h5>
                         <div class="d-flex overflow-auto pb-2" style="gap: 1rem;">
                             @foreach ($category->products as $item)
-                                <div class="card" style="min-width: 220px;">
+                                <div class="card" style="min-width: 220px; max-width:220px;">
                                     <img src="{{ asset('images/' . $item->image) }}" class="card-img-top"
                                         style="height: 150px; object-fit: cover;">
                                     <div class="card-body">
-                                        <h6 class="card-title">{{ $item->name }}</h6>
+                                        <h6 class="card-title" title="{{ $item->name }}">
+                                            {{ \Illuminate\Support\Str::limit($item->name, 30, '...') }}
+                                        </h6>
                                         <p class="text-muted mb-1">Rp {{ number_format($item->price, 0, ',', '.') }}</p>
-                                        <a href="{{ route('product.show', $product->slug) }}"
+                                        <a href="{{ route('product.show', $item->slug) }}"
                                             class="btn btn-sm btn-primary w-100">
                                             <i class="fas fa-shopping-cart me-1"></i> Beli
                                         </a>
